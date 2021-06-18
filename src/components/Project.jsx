@@ -11,6 +11,7 @@ export default function Project() {
             description,
             projectType,
             link,
+            codeURL,
             mainImage{
                 asset->{
                     _id,
@@ -56,7 +57,9 @@ export default function Project() {
                             }
                      </div>
                      <div className='project-links flex justify-center items-baseline'>
-                                <a href={project.link} target="_blank" rel="noopener noreferrer" className='project-live-link'>Live Version</a>
+                     {
+                                   project.link ? <a href={project.link} target="_blank" rel="noopener noreferrer" className='project-live-link'>Live Version</a> : ''
+                               }
                                {
                                    project.codeURL ?  <a href={project.codeURL} target="_blank" rel="noopener noreferrer" className='project-code-link'>Code</a> : ''
                                }

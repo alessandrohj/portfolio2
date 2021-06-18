@@ -32,8 +32,8 @@ export default function Project() {
     return (
 <main className='min-h-screen p-12'>
             <section className='container mx-auto'>
-                <div className='grid sm:relative lg:pb-2 md:flex md:flex-row-reverse md:gap-10'>
-                    <img src={CVImage} alt="CVImage" className='bg-none responsive CVImage' />
+                <div className='grid place-content-center items-center sm:relative lg:pb-2 md:flex md:flex-row-reverse md:gap-10'>
+                    <img src={CVImage} alt="CVImage" className='bg-none responsive CVImage mb-1' />
                     <div className='flex-col'>
                 <h1 className='text-6xl text-center cursive'>Projects Page</h1>
                 <h2 className='text-lg text-gray-600 flex justify-center mb-12'>Welcome to my projects</h2>

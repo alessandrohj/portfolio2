@@ -4,8 +4,8 @@ import './Home.css'
 
 export default function Home(){
     return (
-       <main className='min-h-screen home-main flex justify-center'>
-           <div className='container lg:flex py-5 place-content-center items-center home'>
+       <main className='min-h-screen home-main flex place-content-center'>
+           <div className='container lg:flex-row lg:py-5 flex flex-col place-content-center items-center home'>
            <img src={image} alt='Mobile responsive' className='responsive justify-center'/>
            <div className='relative flex flex-col sm:responsive items-center gap-4'>
                <h1 className='text-7xl text-center text-black font-bold cursive leading-none lg:leading-snug self-center'>Hey there! <br/> I'm Alessandro.</h1>

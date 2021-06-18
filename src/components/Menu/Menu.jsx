@@ -20,7 +20,7 @@ export default function SideBar () {
                         About
                     </NavLink>
                     <NavLink to='/contact' className={menuClass}>
-                       About
+                       Contact
                     </NavLink>
       </Menu>
     );

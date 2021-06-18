@@ -7,7 +7,7 @@ import './Tech.css'
 
 export default function Tech(){
     return (
-        <main className='full select-none'>
+        <main className='select-none pb-4'>
         <div className="container mx-auto font-sans">
         <h1 className='text-5xl flex justify-center cursive  py-10'>Tech Experience</h1>
         <section id="description">

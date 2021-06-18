@@ -12,10 +12,10 @@ export default function NavBar() {
         <header className='bg-indigo-800'>
             <div id='top-nav' className='container grid grid-cols-3 mx-auto sm:flex justify-between'>
                     <NavLink exact to='/' activeClassName='text-white'
-                    className='inline-flex items-center sm:py-6 sm:px-3 mr-4 text-white text-4xl font-bold cursive tracking-widest order-2 sm:order1 name-top'>   <DiCssdeck size='3rem'/>
+                    className='inline-flex items-center sm:py-6 sm:px-3 mr-4 text-white text-4xl lg:text-5xl font-bold cursive tracking-widest order-2 sm:order1 name-top'>   <DiCssdeck size='3rem'/>
                         Alessandro
                     </NavLink>
-                <nav className='sm:flex sm:order-2'>
+                <nav className='sm:flex sm:order-2 text-lg lg:text-2xl'>
                     <div className='hidden sm:flex'>
                     <NavLink to='/project' className={menuClass}>
                         Projects

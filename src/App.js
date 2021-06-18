@@ -4,6 +4,7 @@ import Tech from './components/Tech';
 import Contact from './components/Contact';
 import Project from './components/Project';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 import './App.css';
 
 
@@ -17,6 +18,7 @@ function App() {
       <Route path='/project' component={Project} />
       <Route path='/contact' component={Contact} />
     </Switch>
+    <Footer/>
     </BrowserRouter>
   );
 }

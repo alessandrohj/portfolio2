@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+.cursive{
+    font-family: "Amatic SC", cursive;
+    font-weight: 700;
+}
+
+.menu-items,
+.social-icon,
+.name-top{
+    animation: transform 0.5s ease;
+}
+
+.menu-items:hover,
+.social-icon:hover{
+    transform: scale(1.30);
+}
+.name-top:hover{
+    transform: scale(1.05);
+}

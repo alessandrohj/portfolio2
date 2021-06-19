@@ -23,6 +23,9 @@ export default function NavBar() {
                     <NavLink to='/tech' className={menuClass}>
                         Tech
                     </NavLink>
+                    <NavLink to='/about' className={menuClass}>
+                        About
+                    </NavLink>
                     <NavLink to='/contact' className={menuClass}>
                        Contact
                     </NavLink>
@@ -32,8 +35,8 @@ export default function NavBar() {
                     </div>
                 </nav>
             <div className='inline-flex py-3 px-3 my-6 order-3 ml-4'>
-            <SocialIcon url='https://github.com/deje0014' className='mr-4 hover:shadow-lg social-icon'  target='_blank' fgColor='#fff' style={{height: 37, width: 37}} />
-            <SocialIcon url='https://www.linkedin.com/in/j-alessandro/' className='mr-4 hover:shadow-lg social-icon' target='_blank' fgColor='#fff' style={{height: 37, width: 37}}/>
+            <SocialIcon url='https://github.com/deje0014' className='mr-4 hover:shadow-lg social-icon'  target='_blank' fgColor='#fff' style={{height: 39, width: 39}} />
+            <SocialIcon url='https://www.linkedin.com/in/j-alessandro/' className='mr-4 hover:shadow-lg social-icon' target='_blank' fgColor='#fff' style={{height: 39, width: 39}}/>
             </div>
             </div>
         </header>

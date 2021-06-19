@@ -30,19 +30,23 @@ export default function Project() {
 
 
     return (
-<main className='min-h-screen p-12'>
+<main className='min-h-screen p-10 ml-3'>
             <section className='container mx-auto'>
-                <div className='grid place-content-center items-center sm:relative lg:pb-2 md:flex md:flex-row-reverse md:gap-10'>
+                <div className='flex flex-col place-content-center items-center sm:relative lg:pb-2 md:gap-10'>
+                <h1 className='text-7xl text-center cursive'>Projects Page</h1>
                     <img src={CVImage} alt="CVImage" className='bg-none responsive CVImage mb-1' />
-                    <div className='flex-col'>
-                <h1 className='text-6xl text-center cursive'>Projects Page</h1>
-                <h2 className='text-lg text-gray-600 flex justify-center mb-12'>Welcome to my projects</h2>
-                </div>
                 </div>
                 <div className='grid gap-10 sm:grid-cols-2 md:grid-cols-3'>
                     {projectData && projectData.map((project, index)=> (
-                     <div className="rounded overflow-hidden shadow-xl project-card border-2 border-indigo-100">
-                       <img className="w-full lazy project-image" src={project.mainImage.asset.url} alt={project.title} />
+                     <div className="rounded overflow-hidden shadow-xl project-card border-2 border-indigo-100" key={index}>
+                         
+                         {
+                             project.link ? <a href={project.link} target="_blank" rel="noopener noreferrer">
+                       <img className="w-full lazy project-image" src={project.mainImage.asset.url} alt={project.title} key={index} />
+                       </a> : <a href={project.codeURL} target="_blank" rel="noopener noreferrer">
+                       <img className="w-full lazy project-image" src={project.mainImage.asset.url} alt={project.title} key={index}/>
+                       </a> 
+                         }
                        <div className="px-6 py-4">
                          <div className="font-bold text-xl mb-2 project-title">{project.title}</div>
                          <p className="text-gray-700 text-base">
@@ -58,10 +62,10 @@ export default function Project() {
                      </div>
                      <div className='project-links flex justify-center items-baseline'>
                      {
-                                   project.link ? <a href={project.link} target="_blank" rel="noopener noreferrer" className='project-live-link'>Live Version</a> : ''
+                                   project.link ? <a href={project.link} target="_blank" rel="noopener noreferrer" className='project-live-link bg-indigo-100'>Live Version</a> : ''
                                }
                                {
-                                   project.codeURL ?  <a href={project.codeURL} target="_blank" rel="noopener noreferrer" className='project-code-link'>Code</a> : ''
+                                   project.codeURL ?  <a href={project.codeURL} target="_blank" rel="noopener noreferrer" className='project-code-link bg-indigo-100'>Code</a> : ''
                                }
                              </div>
                      </div>

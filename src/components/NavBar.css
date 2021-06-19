@@ -14,6 +14,7 @@
 .menu-items:hover,
 .social-icon:hover{
     transform: scale(1.30);
+    color: #F0BB5D;
 }
 .name-top:hover{
     transform: scale(1.05);

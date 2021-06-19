@@ -1,6 +1,5 @@
 import React from 'react';
 import image from '../imgs/undraw_Mobile_application_mr4r.svg';
-import './Home.css'
 
 export default function Home(){
     return (

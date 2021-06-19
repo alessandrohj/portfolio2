@@ -3,7 +3,6 @@ import { DiJavascript, DiNodejsSmall, DiJava, } from 'react-icons/di';
 import { SiAdobexd } from "react-icons/si";
 import { IoLogoPwa } from "react-icons/io5";
 import ImgList from '../imgs/undraw_my_notifications_rjej.svg'
-import './Tech.css'
 
 export default function Tech(){
     let listStyle = "list-disc list-inside md:list-none md:leading-relaxed";

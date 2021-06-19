@@ -53,8 +53,8 @@ export default function Tech(){
                 </div>
                 <ul className={listStyle}>
                     <li>UX/UI Design.</li>
-                    <li>Mock-ups and prototypes using Moqups.</li>
-                    <li>Wireframing using Adobe XD.</li>
+                    <li>Mock-ups and wireframings.</li>
+                    <li>Prototypes using Adobe XD.</li>
                     <li>Use of Adobe Illustrator and Photoshop.</li>
                 </ul>
             </div>

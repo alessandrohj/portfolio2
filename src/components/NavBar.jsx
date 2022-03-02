@@ -6,13 +6,13 @@ import SideBar from './Menu/Menu'
 import { DiCssdeck } from 'react-icons/di';
 
 
-export default function NavBar() {
-    let menuClass = 'inline-flex items-center py-3 px-3 my-6 rounded text-white menu-items';
+export default function NavBar({navBarBG}) {
+    let menuClass = 'inline-flex items-center py-3 px-3 my-6 rounded text-black menu-items';
     return (
-        <header className='bg-indigo-800'>
+        <header className={navBarBG ? 'black rounded-b-md' : ''}>
             <div id='top-nav' className='container grid grid-cols-3 mx-auto sm:flex justify-between'>
-                    <NavLink exact to='/' activeClassName='text-white'
-                    className='inline-flex items-center sm:py-6 sm:px-3 mr-4 text-white text-4xl lg:text-5xl font-bold cursive tracking-widest order-2 sm:order1 name-top'>   <DiCssdeck size='3rem'/>
+                    <NavLink exact to='/' activeClassName='text-black'
+                    className='inline-flex items-center sm:py-6 sm:px-3 mr-4 text-4xl lg:text-5xl font-bold cursive tracking-widest order-2 sm:order1 name-top'>   <DiCssdeck size='3rem'/>
                         Alessandro
                     </NavLink>
                 <nav className='sm:flex sm:order-2 text-lg lg:text-2xl'>

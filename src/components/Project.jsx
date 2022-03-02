@@ -30,7 +30,7 @@ export default function Project() {
 
 
     return (
-<main className='min-h-screen p-10 ml-3'>
+<main className='min-h-screen p-10 ml-3' id="projects-section">
             <section className='container mx-auto'>
                 <div className='flex flex-col place-content-center items-center sm:relative lg:pb-2 md:gap-10'>
                 <h1 className='text-7xl text-center cursive'>Projects</h1>

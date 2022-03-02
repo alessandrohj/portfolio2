@@ -10,7 +10,7 @@ export default function Tech(){
     let languageStyle = "flex flex-row gap-1 pb-2 items-center";
 
     return (
-        <div>    
+        <div id='tech-section'>    
       <h1 className='text-5xl font-bold flex justify-center cursive py-10'>Tech Experience</h1>
         <div className="container mx-auto font-sans flex flex-col lg:flex-row">
         <div id="description">

@@ -12,10 +12,10 @@ export default function NavBar({navBarBG}) {
     return (
         <header className={navBarBG ? 'black rounded-b-md' : ''}>
             <div id='top-nav' className='container grid grid-cols-3 mx-auto sm:flex justify-between'>
-                    <NavLink exact to='/' activeClassName='text-black'
-                    className='inline-flex items-center sm:py-6 sm:px-3 mr-4 text-4xl lg:text-5xl font-bold cursive tracking-widest order-2 sm:order1 name-top'>   <DiCssdeck size='3rem'/>
+                    <Link exact to="home" activeClassName='text-black' activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={500}
+                    className='inline-flex cursor-pointer items-center sm:py-6 sm:px-3 mr-4 text-4xl lg:text-5xl font-bold cursive tracking-widest order-2 sm:order1 name-top'>   <DiCssdeck size='3rem'/>
                         Alessandro
-                    </NavLink>
+                    </Link>
                 <nav className='sm:flex sm:order-2 text-lg lg:text-2xl'>
                     <div className='hidden sm:flex'>
         <Link className={menuClass}  activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={500}>Home</Link>

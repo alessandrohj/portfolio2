@@ -4,6 +4,14 @@
     position: relative;
 }
 
+#tech-section{
+    padding-top: 6rem;
+}
+
+#projects-section{
+    padding-top: 8rem;
+}
+
 .project-card:hover{
    transform: scale(1.015);
 }

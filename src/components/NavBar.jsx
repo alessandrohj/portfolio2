@@ -21,15 +21,16 @@ export default function NavBar({navBarBG}) {
         <Link className={menuClass}  activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={500}>Home</Link>
         <Link className={menuClass}  activeClass="active" to="tech" spy={true} smooth={true} offset={50} duration={500}>Tech</Link>
         <Link className={menuClass}  activeClass="active" to="projects" spy={true} smooth={true} offset={50} duration={500}>Projects</Link>
+        <Link className={menuClass}  activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500}>About</Link>
                     </div>
                     <div className='sm:hidden order-1'>
                     <SideBar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
                     </div>
                 </nav>
-            <div className='inline-flex pl-2 py-3 px-3 my-6 order-3 ml-4'>
+            {/* <div className='inline-flex pl-2 py-3 px-3 my-6 order-3 ml-4'>
             <SocialIcon url='https://github.com/deje0014' className='mr-4 hover:shadow-lg social-icon'  target='_blank' fgColor='#fff' style={{height: 39, width: 39}} />
             <SocialIcon url='https://www.linkedin.com/in/j-alessandro/' className='mr-4 hover:shadow-lg social-icon' target='_blank' fgColor='#fff' style={{height: 39, width: 39}}/>
-            </div>
+            </div> */}
             </div>
         </header>
     )

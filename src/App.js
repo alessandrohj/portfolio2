@@ -2,11 +2,11 @@ import {HashRouter, Route, Switch} from 'react-router-dom';
 import * as Scroll from 'react-scroll';
 import Home from './components/Home';
 import Tech from './components/Tech';
-import Contact from './components/Contact';
+// import Contact from './components/Contact';
 import Project from './components/Project';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-// import About from './components/About';
+import About from './components/About';
 import './App.css';
 import { useState, useEffect } from 'react';
 
@@ -45,7 +45,8 @@ function App() {
     {/* <About/> */}
       <Element id='home'> <Home /></Element>
       <Element id='tech'>  <Tech /></Element>
-      <Element id='projects'  className='pb-5'>  <Project /></Element>
+      <Element id='projects'  className='pb-5'> <Project /></Element>
+      <Element id='about'>  <About /></Element>
     <Footer/>
     </HashRouter>
   );

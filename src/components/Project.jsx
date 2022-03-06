@@ -31,10 +31,10 @@ let buttonClass = "rounded-lg hover:border p-1 hover:bg-blue-400 hover:text-whit
 
     return (
 <section id="projects-section">
-            <div className='flex flex-col-reverse sm:grid sm:grid-cols-2'>
-                <img src={CVImage} alt="CVImage" className='bg-none max-w-sm ml-7 CVImage' />
-                <h1 className='text-5xl font-bold text-center p-2 sm:text-left'>Projects</h1>
-                </div>
+<div className='container grid w-1/2 md:w-5/6 lg:w-1/2 grid-rows-1 sm:grid-cols-2 object-contain content-center mx-auto md:mb-7'>
+            <img src={CVImage} alt="Projects" className='float-right object-contain place-self-center pr-4 w-full'/>
+      <h1 className='text-5xl font-bold flex justify-center text-center cursive py-10'>Projects</h1>
+            </div>
                 <div className='wrapper m-5 gap-4 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-11 mt-2 '>
                 {projectData && projectData.map((project, index)=> (
                     <div className=' antialiased lg:col-span-2' key={index}>

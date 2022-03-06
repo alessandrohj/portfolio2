@@ -27,7 +27,7 @@ export default function Project() {
         .catch(console.error)
     }, [])
 
-let buttonClass = "rounded-lg hover:border p-1 hover:bg-blue-400 hover:text-white font-semibold hover:shadow-md"
+let buttonClass = "rounded-lg hover:border p-1 hover:bg-blue-400 hover:text-white font-semibold hover:shadow-md "
 
     return (
 <section id="projects-section">
@@ -35,20 +35,20 @@ let buttonClass = "rounded-lg hover:border p-1 hover:bg-blue-400 hover:text-whit
             <img src={CVImage} alt="Projects" className='float-right object-contain place-self-center pr-4 w-full'/>
       <h1 className='text-5xl font-bold flex justify-center text-center cursive py-10'>Projects</h1>
             </div>
-                <div className='wrapper m-5 gap-4 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-11 mt-2 '>
+                <div className='wrapper m-5 gap-5 grid place-content-around sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-8 xl:grid-cols-11 mt-2 '>
                 {projectData && projectData.map((project, index)=> (
-                    <div className=' antialiased lg:col-span-2' key={index}>
+                    <div className=' antialiased lg:col-span-2 ' key={index}>
                 <img src={project.mainImage.asset.url} alt={project.title} key={index} className='w-full rounded-lg border-2 border-gray-400' />
-                <div className="description lg:5/6 xl:h-72 border relative px-6 m-3 -mt-14 bg-white rounded-3xl shadow-md flex-col place-content-between">
+                <div className="lg:h-3/5 xl:h-80 border relative px-6 m-3 -mt-14 bg-white rounded-3xl shadow-md flex-col place-content-between">
                 <h1 className='font-bold uppercase leading-tight m-1'>{project.title}</h1>
-                    <p className="text-description mb-3">{project.description}</p>
+                    <p className="text-description mb-3 mt-3">{project.description}</p>
                     {
                                     project.tags.map((tag, index)=>(
                                         <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 project-tag" key={index}>#{tag}</span>
                                     ))
                             }
 
-                    <span className='flex gap-5 place-content-around m-3'>
+                    <span className='flex gap-5 place-content-around  xl:absolute xl:mb-1 xl:bottom-0'>
                     {
                                    project.link ? <a href={project.link} target="_blank" rel="noopener noreferrer" className={buttonClass}>Live Version</a> : ''
                                }

@@ -39,9 +39,9 @@ let buttonClass = "rounded-lg hover:border p-1 hover:bg-blue-400 hover:text-whit
                 {projectData && projectData.map((project, index)=> (
                     <div className=' antialiased lg:col-span-2' key={index}>
                 <img src={project.mainImage.asset.url} alt={project.title} key={index} className='w-full rounded-lg border-2 border-gray-400' />
-                <div className="description  min-h-fit border relative px-6 m-3 -mt-14 bg-white rounded-3xl shadow-md ">
+                <div className="description lg:5/6 xl:h-72 border relative px-6 m-3 -mt-14 bg-white rounded-3xl shadow-md flex-col place-content-between">
                 <h1 className='font-bold uppercase leading-tight m-1'>{project.title}</h1>
-                    <p className="text-description">{project.description}</p>
+                    <p className="text-description mb-3">{project.description}</p>
                     {
                                     project.tags.map((tag, index)=>(
                                         <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 project-tag" key={index}>#{tag}</span>

@@ -23,7 +23,7 @@ export default function NavBar({navBarBG}) {
         <Link className={menuClass}  activeClass="active" to="projects" spy={true} smooth={true} offset={50} duration={500}>Projects</Link>
         <Link className={menuClass}  activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500}>About</Link>
                     </div>
-                    <div className='sm:hidden order-1'>
+                    <div className='sm:hidden order-1 -ml-9 -mt-2'>
                     <SideBar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
                     </div>
                 </nav>

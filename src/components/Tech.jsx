@@ -13,9 +13,9 @@ export default function Tech(){
         <div id='tech-section'>    
       <h1 className='text-5xl font-bold flex justify-center cursive py-10'>Tech Experience</h1>
         <div className="container mx-auto font-sans flex flex-col lg:flex-row">
-        <div id="description">
-            <div className='container grid grid-rows-1 object-contain justify-center mb-7'>
-            <img src={ImgList} alt="Tech Experience" className='float-right object-contain pr-4 w-full'/>
+        <div id="description" className='grid  content-center '>
+            <div className='container grid w-1/2 md:w-3/6  grid-rows-1 object-contain content-center mx-auto md:mb-7'>
+            <img src={ImgList} alt="Tech Experience" className='float-right object-contain place-self-center pr-4 w-full'/>
             </div>
         </div>
         <div id="experience" className='items-center py-10'>
@@ -71,9 +71,9 @@ export default function Tech(){
                     <li>Familiarity with Kotlin and Swift</li>
                 </ul>
             </div>
-            <div id="oop" className='justify-self-center md:justify-self-auto'>
+            <div id="oop" className='md:justify-self-auto'>
                 <div className={languageStyle}>
-            <DiJava size="3rem"/>
+            <DiJava size="2.5rem"/>
                 <h2 className={titleStyle}>OOP</h2>
                 </div>
                 <ul className={listStyle}>
@@ -83,9 +83,9 @@ export default function Tech(){
                     <li>C#.</li>
                 </ul>
             </div>
-            <div id="oop" className='justify-self-center md:justify-self-auto'>
+            <div id="oop" className='md:justify-self-auto'>
                 <div className={languageStyle}>
-            <DiReact size="3rem"/>
+            <DiReact size="2.5rem"/>
                 <h2 className={titleStyle}>Frameworks & Libraries</h2>
                 </div>
                 <ul className={listStyle}>

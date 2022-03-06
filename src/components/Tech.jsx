@@ -11,11 +11,11 @@ export default function Tech(){
 
     return (
         <div id='tech-section'>    
-      <h1 className='text-5xl font-bold flex justify-center cursive py-10'>Tech Experience</h1>
         <div className="container mx-auto font-sans flex flex-col lg:flex-row">
         <div id="description" className='grid  content-center '>
-            <div className='container grid w-1/2 md:w-3/6  grid-rows-1 object-contain content-center mx-auto md:mb-7'>
+            <div className='container grid w-1/2 md:w-5/6  grid-rows-1 sm:grid-cols-2 object-contain content-center mx-auto md:mb-7'>
             <img src={ImgList} alt="Tech Experience" className='float-right object-contain place-self-center pr-4 w-full'/>
+      <h1 className='text-5xl font-bold flex justify-center text-center cursive py-10'>Tech Experience</h1>
             </div>
         </div>
         <div id="experience" className='items-center py-10'>

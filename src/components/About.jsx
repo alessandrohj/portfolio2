@@ -6,10 +6,10 @@ export default function About(){
     let titleClass ='font-bold text-left ml-10 pl-5';
     return (
       <section id='about'>
+        <div className='flex flex-col mb-10'>
+        <div className="container mx-auto font-sans w-1/2 md:w-5/6  sm:pt-5 grid md:grid-cols-2 place-items-center">
+            <img src={aboutMeImg} alt="About Me" className='sm:pt-5 self-center w-full' />
          <h1 className='text-5xl font-bold flex justify-center cursive'>About Me</h1>
-        <div className='flex flex-col sm:flex-rol mb-10'>
-        <div className="container mx-auto font-sans sm:pt-5 grid place-items-center">
-            <img src={aboutMeImg} alt="About Me" className='sm:pt-5 self-center h-2/3' />
         </div>
         <div className="container sm:mt-10 font-sans place-items-center text-left">
           <div className='titles '>

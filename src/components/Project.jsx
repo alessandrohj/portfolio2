@@ -35,7 +35,7 @@ let buttonClass = "rounded-lg hover:border p-1 hover:bg-blue-400 hover:text-whit
                 <img src={CVImage} alt="CVImage" className='bg-none max-w-sm ml-7 CVImage' />
                 <h1 className='text-5xl font-bold text-center p-2 sm:text-left'>Projects</h1>
                 </div>
-                <div className='wrapper m-5 gap-4 grid sm:grid-cols-11 mt-2 '>
+                <div className='wrapper m-5 gap-4 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-11 mt-2 '>
                 {projectData && projectData.map((project, index)=> (
                     <div className=' antialiased lg:col-span-2' key={index}>
                 <img src={project.mainImage.asset.url} alt={project.title} key={index} className='w-full rounded-lg border-2 border-gray-400' />

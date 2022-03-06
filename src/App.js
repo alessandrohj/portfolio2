@@ -1,4 +1,4 @@
-import {HashRouter, Route, Switch} from 'react-router-dom';
+import {HashRouter} from 'react-router-dom';
 import * as Scroll from 'react-scroll';
 import Home from './components/Home';
 import Tech from './components/Tech';

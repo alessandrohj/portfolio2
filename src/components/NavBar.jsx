@@ -1,8 +1,6 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import {Link} from 'react-scroll';
 import './NavBar.css';
-import {SocialIcon} from 'react-social-icons';
 import SideBar from './Menu/Menu'
 import { DiCssdeck } from 'react-icons/di';
 
@@ -28,10 +26,6 @@ export default function NavBar({navBarBG}) {
                     <SideBar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
                     </div>
                 </nav>
-            {/* <div className='inline-flex pl-2 py-3 px-3 my-6 order-3 ml-4'>
-            <SocialIcon url='https://github.com/deje0014' className='mr-4 hover:shadow-lg social-icon'  target='_blank' fgColor='#fff' style={{height: 39, width: 39}} />
-            <SocialIcon url='https://www.linkedin.com/in/j-alessandro/' className='mr-4 hover:shadow-lg social-icon' target='_blank' fgColor='#fff' style={{height: 39, width: 39}}/>
-            </div> */}
             </div>
         </header>
     )

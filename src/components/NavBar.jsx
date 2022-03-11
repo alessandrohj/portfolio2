@@ -6,7 +6,7 @@ import { DiCssdeck } from 'react-icons/di';
 
 
 export default function NavBar({navBarBG}) {
-    let menuClass = 'inline-flex items-center py-3 px-3 my-6 tracking-widest cursor-pointer rounded text-black menu-items';
+    let menuClass = 'inline-flex lg:text-3xl items-center py-3 px-3 lg:px-6 my-6 tracking-widest cursor-pointer rounded text-black menu-items';
     return (
         <header className={navBarBG ? 'black rounded-b-md' : ''}>
             <div id='top-nav' className='container grid grid-cols-3 mx-auto sm:flex justify-between'>

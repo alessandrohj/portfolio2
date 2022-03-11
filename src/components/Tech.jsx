@@ -5,8 +5,8 @@ import { IoLogoPwa } from "react-icons/io5";
 import ImgList from '../imgs/undraw_my_notifications_rjej.svg'
 
 export default function Tech(){
-    let listStyle = "list-disc list-inside md:list-none md:leading-relaxed";
-    let titleStyle = "font-bold text-2xl pl-1";
+    let listStyle = "list-disc lg:text-xl list-inside md:list-none md:leading-relaxed";
+    let titleStyle = "font-bold text-2xl lg:text-4xl pl-1";
     let languageStyle = "flex flex-row gap-1 pb-2 items-center";
 
     return (
@@ -15,7 +15,7 @@ export default function Tech(){
         <div id="description">
             <div className='container grid w-1/2 md:w-5/6 lg:w-1/2 grid-rows-1 sm:grid-cols-2 object-contain content-center mx-auto md:mb-7'>
             <img src={ImgList} alt="Tech Experience" className='float-right object-contain place-self-center pr-4 w-full'/>
-      <h1 className='text-5xl font-bold flex justify-center text-center cursive py-10 '>Tech Experience</h1>
+      <h1 className='text-5xl lg:text-7xl font-bold flex justify-center text-center cursive py-10 '>Tech Experience</h1>
             </div>
         </div>
         <div id="experience" className='items-center py-10'>
